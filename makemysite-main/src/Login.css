@@ -1,0 +1,106 @@
+/* Container for the login form */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Input field styling */
+  .login-container form div {
+    margin-bottom: 15px;
+  }
+  
+  .login-container label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .login-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .login-container input[type="text"]:focus {
+    border-color: #61dafb;
+    outline: none;
+  }
+  
+  /* Submit button styling */
+  .login-container button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #61dafb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-container button:hover {
+    background-color: #4db6e5;
+  }
+  
+  /* Reference text styling */
+  .reference-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .reference-text a {
+    color: #61dafb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .reference-text a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 600px) {
+    .login-container {
+      padding: 15px;
+    }
+  
+    .login-container h2 {
+      font-size: 20px;
+    }
+  
+    .login-container input[type="text"] {
+      padding: 8px;
+      font-size: 13px;
+    }
+  
+    .login-container button {
+      padding: 8px;
+      font-size: 15px;
+    }
+  
+    .reference-text {
+      font-size: 13px;
+    }
+  }
+  

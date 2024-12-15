@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chatbox {
+  display: flex;
+  padding: 10px;
+  background-color: #282c34;
+  color: white;
+}
+
+.chatbox input {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+}
+
+.chatbox button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  height: 100%;
+}
+
+.code-editor {
+  width: 50%;
+  background-color: #f5f5f5;
+}
+
+.live-preview {
+  width: 50%;
+  border-left: 1px solid #ddd;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.file-name {
+  font-size: 1em; /* Adjust size as needed */
+  font-weight: bold;
+  margin-bottom: 0px; /* Space between file name and editor */
+  color: #555; /* Slightly lighter color for a more subtle look */
+  text-align: left; /* Align left if desired */
+  border-bottom: 1px solid #ddd; /* Optional: Adds a bottom border for separation */
+  padding-bottom: 0px; /* Reduced space between file name and border */
+}
+
+.react-converted-container, .reactbuttoncontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.file-list, .reactbutton {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.file-list button, .reactbutton {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-list button.active, .reactbutton {
+  background-color: #e0e0e0;
+}
+
+/* .code-editor {
+  width: 100%;
+  max-width: 800px;
+} */
+
+/* General button styles */
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #4db6e5;
+  transform: scale(1.05);
+}
+
+/* Active button state */
+button:active {
+  background-color: #3a9dc1;
+  transform: scale(0.98);
+}
+
